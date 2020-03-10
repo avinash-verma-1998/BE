@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>API</title>
+    <title>welcome</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1>API</h1>
-    <p>run npm install  
-      for installing all the dependencies.
-      npm start
-      for starting up the server.
-replace mongouri in app js with local instance or online cluster
-</p>
-    
-      <h4> API</h4>
-    
-   <hr>
-    <p> For getting primes
-    
-      GET http://localhost/prime/n/<number>
-      
-      example http://localhost/prime/n/20
-      
-      for getting primes upto 20.</p>
-   
-    
-    <hr>
-    <p>For creating a user.
-    
-    POST example using axios.
-    axios({
-    url: "http://localhost:2000/users/createuser",
-    method: "POST",
-    data: {
-    name: "test4",
-    password: "test4",
-    email: "test4@test.com",
-    password: "test4",
-    address: "test4",
-    phone: 1234,
-    DOB: Date.now()
-    }
-    })</p>
-    
-    
-    <hr>
-    <p>adding users to a a contact
-    
-    axios({
-    url: "http://localhost:2000/users/add",
-    method: "POST",
-    data:{
-    user:"test3@test.com",
-    contact:"test4@test.com"
-    }
-    })</p>
-    
-    
-    <hr>
-    
-    deleting a user
-    axios({
-    url: "http://localhost:2000/users/remove",
-    method: "DELETE",
-    data:{
-    email:"test3@test.com"
-    }
-    })
-    
+    <p>
+      run npm install <br />
+      for installing all the dependencies. <br />
+      npm start <br />
+      for starting up the server. <br />
+      replace mongouri in app js with local instance or online cluster <br />
+    </p>
+
+    <hr />
+    <p>
+      <h4>For getting primes</h4> <br />
+
+      GET http://localhost/prime/n/number <br />
+
+      example http://localhost/prime/n/20 <br />
+
+      for getting primes upto 20.
+    </p>
+    <br />
+
+    <hr />
+    <p>
+      <h4>For creating a user.</h4> <br />
+
+      POST example using axios. <br />
+      axios({ <br />
+      url: "http://localhost:2000/users/createuser", <br />
+      method: "POST", <br />
+      data: { <br />
+      name: "test4", <br />
+      password: "test4", <br />
+      email: "test4@test.com", <br />
+      password: "test4", <br />
+      address: "test4", <br />
+      phone: 1234, <br />
+      DOB: Date.now() <br />
+      } <br />
+      })
+    </p>
+
+    <hr />
+    <p>
+     <h4> adding users to a a contact</h4> <br />
+
+      axios({ url: "http://localhost:2000/users/add", <br />
+      method: "POST", <br />
+      data:{ <br />
+      user:"test3@test.com", <br />
+      contact:"test4@test.com" <br />
+      } <br />
+      })
+    </p>
+
+    <hr />
+    <br />
+   <h4> deleting a user </h4><br />
+    axios({ <br />
+    url: "http://localhost:2000/users/remove", <br />
+    method: "DELETE", <br />
+    data:{ <br />
+    email:"test3@test.com" <br />
+    } <br />
+    }) <br />
   </body>
 </html>
