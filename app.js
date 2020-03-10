@@ -7,13 +7,12 @@ var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 var routes = require("./routes/index");
 var users = require("./routes/users");
+var keys = require("./keys");
 
 var app = express();
 
 //mogodb uri
-var mongoUri =
-  "mongodb://avenue_user:mFOb6KBOG5EOwY8U@chat-app-shard-00-00-hohce.mongodb.net:27017,chat-app-shard-00-01-hohce.mongodb.net:27017,chat-app-shard-00-02-hohce.mongodb.net:27017/bedata?ssl=true&replicaSet=chat-app-shard-0&authSource=admin&retryWrites=true&w=majority";
-
+var mongoUri = keys.uri;
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
