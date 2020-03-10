@@ -9,7 +9,7 @@ API-----------------------------------------------------------------------------
 
 For getting primes
 
-GET http://localhost/prime/n/<number>
+GET http://localhost/prime/n/number
 
 example http://localhost/prime/n/20
 
